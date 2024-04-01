@@ -1,0 +1,28 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+html {
+  background-color: #111010;
+}
+
+@font-face {
+  font-family: "Geist-Bold";
+  src: url("public/Geist-Bold.otf");
+}
+
+.geist-bold {
+  font-family: Geist-Bold;
+}
+
+@font-face {
+  font-family: "Geist-Regular";
+  src: url("public/Geist-Regular.otf");
+}
+
+.geist-regular {
+  font-family: Geist-Regular;
+}
