@@ -13,24 +13,24 @@ function HomePage() {
       <div className="flex flex-col gap-5">
         <div className="flex w-[100%] justify-between gap-5">
           <img
-            src="public/images/vertical-2.png"
+            src="/images/vertical-2.png"
             alt=""
             className="w-[35%] rounde-md"
           />
           <img
-            src="public/images/horizontal-2.png"
+            src="/images/horizontal-2.png"
             alt=""
             className="w-[65%] rounded-md"
           />
         </div>
         <div className="flex w-[100%] justify-between gap-5">
           <img
-            src="public/images/horizontal-1.png"
+            src="/images/horizontal-1.png"
             alt=""
             className="w-[65%] rounded-md"
           />
           <img
-            src="public/images/vertical-1.png"
+            src="/images/vertical-1.png"
             alt=""
             className="w-[35%] rounde-md"
           />
@@ -45,7 +45,7 @@ function HomePage() {
       <div className="grid md:grid-cols-[1fr_1fr_1fr] gap-5 text-[14px]">
         <a href="https://www.instagram.com/elrincondeldev/" target="_blank">
           <div className="flex items-center p-3 justify-between bg-[#262626] border-2 border-[#404040] rounded-md">
-            <img src="public/images/instagram.png" alt="" />
+            <img src="/images/instagram.png" alt="" />
             <div className="text-left">
               <p>@elrincondeldev</p>
               <p>125,000 followers</p>
@@ -55,7 +55,7 @@ function HomePage() {
         </a>
         <a href="https://www.tiktok.com/@elrincondeldev" target="_blank">
           <div className="flex items-center p-3 justify-between bg-[#262626] border-2 border-[#404040] rounded-md">
-            <img src="public/images/tiktok.png" alt="" />
+            <img src="/images/tiktok.png" alt="" />
             <div className="text-left">
               <p>@elrincondeldev</p>
               <p>159,000 followers</p>
@@ -68,7 +68,7 @@ function HomePage() {
           target="_blank"
         >
           <div className="flex items-center p-3 justify-between bg-[#262626] border-2 border-[#404040] rounded-md">
-            <img src="public/images/youtube.png" alt="" />
+            <img src="/images/youtube.png" alt="" />
             <div className="text-left">
               <p>@elrincondeldev</p>
               <p>24,000 subscribers</p>
