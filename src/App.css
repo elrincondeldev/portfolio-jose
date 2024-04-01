@@ -11,7 +11,7 @@ html {
 
 @font-face {
   font-family: "Geist-Bold";
-  src: url("public/Geist-Bold.otf");
+  src: url("/Geist-Bold.otf");
 }
 
 .geist-bold {
@@ -20,7 +20,7 @@ html {
 
 @font-face {
   font-family: "Geist-Regular";
-  src: url("public/Geist-Regular.otf");
+  src: url("/Geist-Regular.otf");
 }
 
 .geist-regular {

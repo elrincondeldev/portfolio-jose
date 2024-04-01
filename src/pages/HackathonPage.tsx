@@ -18,9 +18,9 @@ function HackathonPage() {
         </div>
       </a>
       <div className="flex justify-between">
-        <img src="public/images/hackathon-1.png" alt="" className="w-[32%]" />
-        <img src="public/images/hackathon-2.png" alt="" className="w-[32%]" />
-        <img src="public/images/hackathon-3.png" alt="" className="w-[32%]" />
+        <img src="/images/hackathon-1.png" alt="" className="w-[32%]" />
+        <img src="/images/hackathon-2.png" alt="" className="w-[32%]" />
+        <img src="/images/hackathon-3.png" alt="" className="w-[32%]" />
       </div>
       <p className="text-left text-[#d4d4d4]">
         The first edition of this event is currently being developed, and in the
@@ -30,17 +30,17 @@ function HackathonPage() {
       <p className="text-left">Oficial partners:</p>
       <div className="flex justify-between">
         <img
-          src="public/images/logitech.svg"
+          src="/images/logitech.svg"
           alt=""
           className="bg-[#262626] border-2 border-[#404040] px-10 py-5 rounded-sm"
         />
         <img
-          src="public/images/nuwe.svg"
+          src="/images/nuwe.svg"
           alt=""
           className="bg-[#262626] border-2 border-[#404040] px-10 py-5 rounded-sm"
         />
         <img
-          src="public/images/4geeks.svg"
+          src="/images/4geeks.svg"
           alt=""
           className="bg-[#262626] border-2 border-[#404040] px-10 py-5 rounded-sm"
         />
