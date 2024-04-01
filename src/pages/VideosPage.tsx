@@ -27,19 +27,21 @@ function VideosPage() {
   const [videos, setVideos] = useState<Video[]>([]);
 
   useEffect(() => {
-    const proxyUrl = "https://thingproxy.freeboard.io/fetch/";
-    const url =
-      "https://www.youtube.com/feeds/videos.xml?channel_id=UCWn_0MmgojB711LFX-jaCDQ";
+    const fetchVideos = async () => {
+      try {
+        const corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
 
-    fetch(proxyUrl + url)
-      .then((response) => response.text())
-      .then((data) => {
+        const url =
+          "https://www.youtube.com/feeds/videos.xml?channel_id=UCWn_0MmgojB711LFX-jaCDQ";
+
+        const response = await fetch(corsAnywhereUrl + url);
+        const data = await response.text();
+
         const xml = xml2js(data, {
           compact: true,
           ignoreComment: true,
         }) as ElementCompact;
 
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const videoEntries = xml.feed.entry.map((entry: any) => {
           return {
             id: { _text: entry.id._text },
@@ -67,8 +69,14 @@ function VideosPage() {
             },
           };
         });
+
         setVideos(videoEntries);
-      });
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchVideos();
   }, []);
 
   return (
